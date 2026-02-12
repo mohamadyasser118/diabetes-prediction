@@ -34,3 +34,37 @@ diabetes-prediction/
 ├── README.md
 └── requirements.txt
 ```
+
+### Making Predictions
+```python
+import numpy as np
+from sklearn.preprocessing import StandardScaler
+from sklearn import svm
+
+# Example input: (Pregnancies, Glucose, BP, SkinThickness, Insulin, BMI, DiabetesPedigree, Age)
+input_data = (1, 89, 66, 23, 94, 28.1, 0.167, 21)
+
+# Load your trained model and scaler
+# Make prediction
+# ... (add your prediction code)
+```
+
+## Model Performance
+
+- **Training Accuracy:** 78.66%
+- **Test Accuracy:** 77.27%
+- **Algorithm:** Support Vector Machine (Linear Kernel)
+
+## Results
+The model successfully predicts diabetes with reasonable accuracy. Further improvements could include:
+- Feature engineering
+- Hyperparameter tuning
+- Trying different algorithms (Random Forest, XGBoost, Neural Networks)
+- Handling class imbalance
+
+## Technologies Used
+- Python 3.8+
+- NumPy
+- Pandas
+- Scikit-learn
+- Jupyter Notebook
